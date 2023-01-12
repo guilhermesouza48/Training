@@ -1,0 +1,48 @@
+header {    
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body {
+    background-color: rgb(110, 208, 176);
+    height: 100vh;
+    font : normal 15pt Arial ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    width: 500px;
+    background-color: aliceblue;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.487);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagens {
+    border-radius: 30px;
+    margin-top: 20px ;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#horas {
+    text-align: center;
+}
