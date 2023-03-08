@@ -1,7 +1,56 @@
-body { 
-    background-color: aqua;
+/* Importando o _h2.scss */
+@import "h2.scss";
+
+/* Declarar variável com SASS */
+$cor : #f8f0f0;
+
+body {
+    background-color: #f8f0f0;
 }
 
 h1 {
-    color: red
+    color: red ;
+    background-color: green;
+}
+
+/* Testando Extend - utilizar em varios elementos*/
+#titulo-simples {
+    color: rgb(255, 89, 24) ;
+}
+
+#titulo-complexo {
+    @extend #titulo-simples;
+    background-color: rgb(37, 37, 37);
+}
+
+/* Utilizando MIXIN - trabalhar com grupos de elementos */
+@mixin back ($cor: green, $teste: 150px){
+    background-color: rgb(46, 46, 46);
+    // definindo Variaveis
+    color: $cor;
+    height: $teste;
+}
+
+
+
+h5 {
+    @include back(blue);
+}
+
+
+
+/* Inclue - inclui o mixin */
+h6 {
+    color: red;
+    // mudando variáveis
+    @include back(red,80px);
+}
+
+/* NESTED */
+
+.titulos {
+    border: black solid 1px;
+    p {
+        color : rgb(25, 133, 6);
+    }
 }
